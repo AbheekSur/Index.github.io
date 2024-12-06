@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+    body{
+        margin: 0%;
+    }
+    .container{
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 25% 55% 20%;
+      grid-template-columns: auto 20%;
+      grid-template-areas:
+      "header header"
+      "content sidebar"
+      "footer footer"
+    }    
+    .header{
+      background-color: #69a320;
+      grid-area: header;
+      display: flex;
+      align-items: flex-end;
+      justify-content: end;
+    }
+    
+    .content{
+      background-color: limegreen;
+      grid-area: content;
+    }
+    
+    sidebar{
+      background-color: rgb(253, 144, 144);
+      grid-area: sidebar;
+    }
+    
+    .footer{
+      background-color: darkgreen;
+      grid-area: footer;
+    }
+    .Element1{
+        position: relative;
+        display: inline-block;
+        padding: 5%;
+    } 
+    .tooltiptext1{
+        display: none;
+        position: relative;
+        background-color: white;
+        padding: 12px 16px;
+        z-index: 1;
+        border-radius: 10%;
+    }
+    .Element1:hover .tooltiptext1{
+        display: block;
+    }
+    .Element2{
+        position: relative;
+        display: inline-block;
+        padding: 5%;
+    } 
+    .tooltiptext2{
+        display: none;
+        position: relative;
+        background-color: white;
+        padding: 12px 16px;
+        z-index: 1;
+        border-radius: 10%;
+    }
+    .Element2:hover .tooltiptext2{
+        display: block;
+    }
+    @media only screen and (max-width : 600px){
+        .container{
+            grid-template-rows: 20% 10% 60% 10%;
+            grid-template-columns: 100%;
+            grid-template-areas: 
+            "header"
+            "sidebar"
+            "content"
+            "footer"
+        }
+    }
+          </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="Element1"><span class="tooltiptext1">Click to explore the Indian Animal Kingdom</span><a style="text-decoration:none" href="http://127.0.0.1:5500/new.html">Indian Animal Kingdom</a></div>
+<div class="Element2"><span class="tooltiptext2">Click to go to my profile</span><a style="text-decoration:none" href="../me2.html">About me</a></div>
+</div>
+<div class="content"></div>
+<div class="sidebar"></div>
+<div class="footer"></div>
+</div> 
+</body>
+</html>
