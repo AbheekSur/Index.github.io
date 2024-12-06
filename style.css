@@ -1,0 +1,132 @@
+h1{
+    font-size: 20vh;
+    color: gold;
+}
+marquee{
+    font-size: 7.5vh;
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: greenyellow;
+    animation-name: color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes color{
+    25% {color: aqua; }
+    75% {color: red; }
+}
+ body{
+    margin: 0%;   
+    background: url(https://travellingmoods.com/wp-content/uploads/2015/07/rainforest.jpg) ;
+    backdrop-filter: blur(5px);
+    background-attachment: fixed;
+    height: 100%;      
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+.name1{
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+}
+img{
+    width: 337.5px;
+    height: 250px;
+    margin: 0%;
+    border-radius: 5%;
+}
+
+.card1{
+    position: relative;
+    display: inline-block;
+    padding: 5%;
+} 
+.text1{
+    display: none;
+    font-family: "Angkor";
+    font-size: medium;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px pink;
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 5%;
+    width: 12cm;
+    top: -330px;
+    left: 105%;
+}
+.card1:hover .text1{
+    display: block;
+    position: relative;
+}
+.name2{
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+}
+.card2{
+    position: relative;
+    display: inline-block;
+    padding: 5%;
+} 
+.text2{
+    display: none;
+    font-family: "Angkor";
+    position: absolute;
+    background-color: white;
+    padding: 12px 16px;
+    box-shadow: 0px 8px 16px 0px pink;
+    z-index: 1;
+    border-radius: 5%;
+    width: 12cm;
+    top: -330px;
+    left: 105%;
+    
+}
+.card2:hover .text2{
+    display: block;
+    position: relative;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.name3{
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-size: 400;
+}
+.card3{
+    position: relative;
+    display: inline-block;
+    padding: 5%;
+} 
+.text3{
+    display: none;
+    font-family: "Angkor";
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px pink;
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 5%;
+    width: 12cm;
+    top: -330px;
+    left: 105%;
+}
+.card3:hover .text3{
+    display: block;
+    position: relative;
+}
+.totalcards{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+.links{
+    justify-content: center;
+    align-items: end;
+}
+ul{
+line-height: 1.0cm; 
+}
